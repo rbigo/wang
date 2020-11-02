@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1A05CB6-7E1C-405F-A28F-2DF60A36DB2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wang</RootNamespace>
+    <AssemblyName>wang</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddCourse.Designer.cs">
+      <DependentUpon>FormAddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckuser_Z_score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckuser_Z_score.Designer.cs">
+      <DependentUpon>FormCheckuser_Z_score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangePW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePW.Designer.cs">
+      <DependentUpon>FormChangePW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckcourse.Designer.cs">
+      <DependentUpon>FormCheckcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckscore.Designer.cs">
+      <DependentUpon>FormCheckscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckuser.Designer.cs">
+      <DependentUpon>FormCheckuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckuser_G.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckuser_G.Designer.cs">
+      <DependentUpon>FormCheckuser_G.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckuser_Z.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckuser_Z.Designer.cs">
+      <DependentUpon>FormCheckuser_Z.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageLogin.Designer.cs">
+      <DependentUpon>FormManageLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PMSClass\DBConnection.cs" />
+    <Compile Include="PMSClass\DBOperate.cs" />
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentWangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentWangDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAddCourse.resx">
+      <DependentUpon>FormAddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangePW.resx">
+      <DependentUpon>FormChangePW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckcourse.resx">
+      <DependentUpon>FormCheckcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckscore.resx">
+      <DependentUpon>FormCheckscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckuser.resx">
+      <DependentUpon>FormCheckuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckuser_G.resx">
+      <DependentUpon>FormCheckuser_G.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckuser_Z.resx">
+      <DependentUpon>FormCheckuser_Z.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckuser_Z_score.resx">
+      <DependentUpon>FormCheckuser_Z_score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageLogin.resx">
+      <DependentUpon>FormManageLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StudentWangDataSet.xsc">
+      <DependentUpon>StudentWangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentWangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentWangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentWangDataSet.xss">
+      <DependentUpon>StudentWangDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PMSImages\信息.png" />
+    <Content Include="PMSImages\帮助.png" />
+    <Content Include="PMSImages\成绩.png" />
+    <Content Include="PMSImages\搜索.png" />
+    <Content Include="PMSImages\default.jpg" />
+    <Content Include="PMSImages\用户.png" />
+    <Content Include="PMSImages\用户2.png" />
+    <Content Include="PMSImages\老师.png" />
+    <Content Include="PMSImages\背景.png" />
+    <Content Include="PMSImages\背景图.png" />
+    <Content Include="PMSImages\课程.png" />
+    <Content Include="PMSImages\退出.jpg" />
+    <None Include="Resources\背景图123.png" />
+    <None Include="Resources\暂无照片.png" />
+    <None Include="Resources\用户2.png" />
+    <None Include="Resources\用户.png" />
+    <None Include="Resources\信息.png" />
+    <None Include="Resources\退出.jpg" />
+    <None Include="Resources\搜索.png" />
+    <None Include="Resources\老师.png" />
+    <None Include="Resources\课程.png" />
+    <None Include="Resources\成绩.png" />
+    <None Include="Resources\背景图.png" />
+    <None Include="Resources\背景.png" />
+    <None Include="Resources\帮助.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
